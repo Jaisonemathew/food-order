@@ -89,7 +89,7 @@
 
                             <div class="food-menu-desc">
                                 <h4><?php echo $title; ?></h4>
-                                <p class="food-price">$<?php echo $price; ?></p>
+                                <p class="food-price">₹<?php echo $price; ?></p>
                                 <p class="food-detail">
                                     <?php echo $description; ?>
                                 </p>

@@ -21,7 +21,7 @@
                     <img src="images/logo.png" alt="Restaurant Logo" class="img-responsive">
                 </a>
             </div>
-
+<br>
             <div class="menu text-right">
                 <ul>
                     <li>
@@ -33,8 +33,18 @@
                     <li>
                         <a href="<?php echo SITEURL; ?>foods.php">Foods</a>
                     </li>
-                    <li>
-                        <a href="#">Contact</a>
+                    <li>            
+							<?php
+						if(empty($_SESSION["u_id"]))
+							{
+								echo '<li class="nav-item"><a href="login.php" class="nav-link active">Login</a> </li>';
+							}
+						else
+							{
+                                    echo  '<li class="nav-item"><a href="myorders.php" class="nav-link active">Myorders</a> </li>';
+									echo  '<li class="nav-item"><a href="logout.php" class="nav-link active">Logout</a> </li>';
+							}
+						?>
                     </li>
                 </ul>
             </div>

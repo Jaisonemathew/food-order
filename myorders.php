@@ -9,13 +9,13 @@
 
                 <table class="tbl-full">
                     <tr>
-                        <th>S.N.</th>
-                        <th>Food</th>
-                        <th>Price</th>
-                        <th>Qty.</th>
-                        <th>Total</th>
-                        <th>Order Date</th>
-                        <th>Status</th>
+                        <th>S.N. </th>
+                        <th>Food </th>
+                        <th>Price </th>
+                        <th>Qty. </th>
+                        <th>Total </th>
+                        <th>Order Date </th>
+                        <th>Status </th>
                     </tr>
 <hr>
                     <?php 
@@ -27,7 +27,7 @@
                         $count = mysqli_num_rows($res);
 
                         $sn = 1; //Create a Serial Number and set its initail value as 1
-
+                     
                         if($count>0)
                         {
                             //Order Available
@@ -83,7 +83,7 @@
                         else
                         {
                             //Order not Available
-                            echo "<tr><td colspan='12' class='error'>Orders not Available</td></tr>";
+                            echo "<tr><td colspan='12' class='error'>You have not placed any orders yet!!!</td></tr>";
                         }
                     ?>
 

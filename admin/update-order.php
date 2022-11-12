@@ -16,7 +16,7 @@
 
                 //Get all other details based on this id
                 //SQL Query to get the order details
-                $sql = "SELECT * FROM tbl_order WHERE id=$id";
+                $sql = "SELECT users.*, tbl_order.* FROM users INNER JOIN tbl_order ON users.id=tbl_order.u_id";
                 //Execute Query
                 $res = mysqli_query($conn, $sql);
                 //Count Rows

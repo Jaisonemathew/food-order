@@ -31,7 +31,7 @@
 
                     <?php 
                         //Get all the orders from database
-                        $sql = "SELECT * FROM tbl_order ORDER BY id DESC"; // DIsplay the Latest Order at First
+                        $sql = "SELECT users.*, tbl_order.* FROM users INNER JOIN tbl_order ON users.id=tbl_order.u_id"; // DIsplay the Latest Order at First
                         //Execute Query
                         $res = mysqli_query($conn, $sql);
                         //Count the Rows

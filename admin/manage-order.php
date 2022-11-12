@@ -1,6 +1,4 @@
 <?php include('partials/menu.php'); ?>
-
-<div class="main-content">
     <div class="wrapper">
         <h1>Manage Order</h1>
 
@@ -15,7 +13,7 @@
                 ?>
                 <br><br>
 
-                <table class="tbl-full">
+                <table class="content-table">
                     <tr>
                         <th>S.N.</th>
                         <th>Food</th>
@@ -116,6 +114,6 @@
                 </table>
     </div>
     
-</div>
+
 
 <?php include('partials/footer.php'); ?>

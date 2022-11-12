@@ -6,8 +6,8 @@
 
                 <br /><br /><br />
                 <br><br>
-
-                <table class="tbl-full">
+                <center>
+                <table class="content-table">
                     <tr>
                         <th>S.N. </th>
                         <th>Food </th>
@@ -89,6 +89,7 @@
 
  
                 </table>
+                </center>
     </div>
     
 </div>

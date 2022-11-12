@@ -44,7 +44,7 @@
                 
                 ?>
 
-                <table class="tbl-full">
+                <table class="content-table">
                     <tr>
                         <th>S.N.</th>
                         <th>Title</th>
@@ -52,7 +52,8 @@
                         <th>Image</th>
                         <th>Featured</th>
                         <th>Active</th>
-                        <th>Actions</th>
+                        <th>Update</th>
+                        <th>Delete</th>
                     </tr>
 
                     <?php 
@@ -108,7 +109,9 @@
                                     <td><?php echo $active; ?></td>
                                     <td>
                                         <a href="<?php echo SITEURL; ?>admin/update-food.php?id=<?php echo $id; ?>" class="btn-secondary">Update Food</a>
-                                        <a href="<?php echo SITEURL; ?>admin/delete-food.php?id=<?php echo $id; ?>&image_name=<?php echo $image_name; ?>" class="btn-danger">Delete Food</a>
+                                    </td>
+                                    <td>
+                                    <a href="<?php echo SITEURL; ?>admin/delete-food.php?id=<?php echo $id; ?>&image_name=<?php echo $image_name; ?>" class="btn-danger">Delete Food</a>    
                                     </td>
                                 </tr>
 

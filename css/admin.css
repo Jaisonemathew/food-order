@@ -92,10 +92,10 @@ table tr td{
 .menu ul li a{
     text-decoration: none;
     font-weight: bold;
-    color: #ff6b81;
+    color:  #45637d;
 }
 .menu ul li a:hover{
-    color: #ff4757;
+    color:  #364c5f;
 }
 
 /* CSS for main-content */
@@ -115,7 +115,7 @@ table tr td{
 
 /* CSS for Footer */
 .footer{
-    background-color: #ff4757;
+    background-color:  #45637d;
     color: white;
 }
 

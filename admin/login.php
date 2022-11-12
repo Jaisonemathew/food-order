@@ -3,13 +3,14 @@
 <html>
     <head>
         <title>Login - Food Order System</title>
-        <link rel="stylesheet" href="../css/admin.css">
+        <link rel="stylesheet" href="../css/adminlogin.css">
     </head>
 
     <body>
         
         <div class="login">
-            <h1 class="text-center">Login</h1>
+            <br><br><br>
+            <h2 class="text-center">Admin Login</h2>
             <br><br>
 
             <?php 
@@ -26,9 +27,10 @@
                 }
             ?>
             <br><br>
-
+            <div class="container">
+            <div class="myform">
             <!-- Login Form Starts HEre -->
-            <form action="" method="POST" class="text-center">
+            <form action="" method="POST">
             Username: <br>
             <input type="text" name="username" placeholder="Enter Username"><br><br>
 
@@ -38,9 +40,12 @@
             <input type="submit" name="submit" value="Login" class="btn-primary">
             <br><br>
             </form>
+            </div>
+            <div class="image">
+      <img src="../images/image.jpg">
+    </div>
+            </div>
             <!-- Login Form Ends HEre -->
-
-            <p class="text-center">Admin Login</p>
         </div>
 
     </body>

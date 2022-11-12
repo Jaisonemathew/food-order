@@ -101,7 +101,7 @@
                 alert-dismissible fade show" role="alert">
         
                 <strong>Success!</strong> Your account is 
-                now created and you can login. 
+                now created and you can <a href="login.php">login.</a> 
                 <button type="button" class="close"
                     data-dismiss="alert" aria-label="Close"> 
                     <span aria-hidden="true">×</span> 

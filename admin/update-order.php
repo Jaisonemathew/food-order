@@ -16,7 +16,7 @@
 
                 //Get all other details based on this id
                 //SQL Query to get the order details
-                $sql = "SELECT users.*, tbl_order.* FROM users INNER JOIN tbl_order ON users.id=tbl_order.u_id";
+                $sql = "SELECT * FROM tbl_order WHERE id=$id";
                 //Execute Query
                 $res = mysqli_query($conn, $sql);
                 //Count Rows
@@ -31,10 +31,6 @@
                     $price = $row['price'];
                     $qty = $row['qty'];
                     $status = $row['status'];
-                    $customer_name = $row['customer_name'];
-                    $customer_contact = $row['customer_contact'];
-                    $customer_email = $row['customer_email'];
-                    $customer_address= $row['customer_address'];
                 }
                 else
                 {
@@ -62,7 +58,7 @@
                 <tr>
                     <td>Price</td>
                     <td>
-                        <b> $ <?php echo $price; ?></b>
+                        <b> ₹ <?php echo $price; ?></b>
                     </td>
                 </tr>
 
@@ -84,40 +80,10 @@
                         </select>
                     </td>
                 </tr>
-
-                <tr>
-                    <td>Customer Name: </td>
-                    <td>
-                        <input type="text" name="customer_name" value="<?php echo $customer_name; ?>">
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>Customer Contact: </td>
-                    <td>
-                        <input type="text" name="customer_contact" value="<?php echo $customer_contact; ?>">
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>Customer Email: </td>
-                    <td>
-                        <input type="text" name="customer_email" value="<?php echo $customer_email; ?>">
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>Customer Address: </td>
-                    <td>
-                        <textarea name="customer_address" cols="30" rows="5"><?php echo $customer_address; ?></textarea>
-                    </td>
-                </tr>
-
                 <tr>
                     <td clospan="2">
                         <input type="hidden" name="id" value="<?php echo $id; ?>">
                         <input type="hidden" name="price" value="<?php echo $price; ?>">
-
                         <input type="submit" name="submit" value="Update Order" class="btn-secondary">
                     </td>
                 </tr>
@@ -135,25 +101,13 @@
                 $id = $_POST['id'];
                 $price = $_POST['price'];
                 $qty = $_POST['qty'];
-
                 $total = $price * $qty;
-
                 $status = $_POST['status'];
-
-                $customer_name = $_POST['customer_name'];
-                $customer_contact = $_POST['customer_contact'];
-                $customer_email = $_POST['customer_email'];
-                $customer_address = $_POST['customer_address'];
-
                 //Update the Values
                 $sql2 = "UPDATE tbl_order SET 
                     qty = $qty,
                     total = $total,
-                    status = '$status',
-                    customer_name = '$customer_name',
-                    customer_contact = '$customer_contact',
-                    customer_email = '$customer_email',
-                    customer_address = '$customer_address'
+                    status = '$status'
                     WHERE id=$id
                 ";
 

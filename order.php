@@ -42,11 +42,11 @@
 <!-- fOOD sEARCH Section Starts Here -->
 <section class="food-search">
     <div class="container">        
-        <h2 class="text-center text-white">Fill this form to confirm your order.</h2>
+        <h2 class="text-center text-white">Please confirm to place order</h2>
 
         <form action="" method="POST" class="order">
             <fieldset>
-                <legend>Selected Food</legend>
+                <legend style="color:white;">Selected Food</legend>
 
                 <div class="food-menu-img">
                     <?php 
@@ -70,13 +70,13 @@
                 </div>
 
                 <div class="food-menu-desc">
-                    <h3><?php echo $title; ?></h3>
+                    <h3 style="color:white;"><?php echo $title; ?></h3>
                     <input type="hidden" name="food" value="<?php echo $title; ?>">
 
-                    <p class="food-price">₹<?php echo $price; ?></p>
+                    <p class="food-price" style="color:white;">₹<?php echo $price; ?></p>
                     <input type="hidden" name="price" value="<?php echo $price; ?>">
 
-                    <div class="order-label">Quantity</div>
+                    <div class="order-label" style="color:white;">Quantity</div>
                     <input type="number" name="qty" class="input-responsive" value="1" required>
                     
                 </div>
@@ -84,7 +84,6 @@
             </fieldset>
             
             <fieldset>
-                <legend>Confirm Quantity</legend>
                 <input type="submit" name="submit" value="Confirm Order" class="btn btn-primary">
             </fieldset>
 

@@ -85,13 +85,9 @@
         }
         else
         {
-            //User not Available and Login FAil
-            $_SESSION['login'] = "<div class='error text-center'>Username or Password did not match.</div>";
-            //REdirect to HOme Page/Dashboard
-            header('location:'.SITEURL.'admin/login.php');
+            $message = "Username or Password is incorrect.\\nTry again.";
+            echo "<script type='text/javascript'>alert('$message');</script>";
         }
-
-
     }
 
 ?>

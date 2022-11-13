@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 13, 2022 at 07:49 AM
+-- Generation Time: Nov 13, 2022 at 02:01 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.0.19
 
@@ -90,15 +90,33 @@ CREATE TABLE `tbl_food` (
 --
 
 INSERT INTO `tbl_food` (`id`, `title`, `description`, `price`, `image_name`, `category_id`, `featured`, `active`) VALUES
-(4, 'Best Burger', 'Burger with Ham and lots of Cheese,onion and sauce', '250.00', 'Food-Name-6340.jpg', 5, 'Yes', 'Yes'),
-(5, 'Smoky BBQ Pizza', 'Best Firewood Pizza in Town made with thin cheese', '525.00', 'Food-Name-8298.jpg', 4, 'Yes', 'Yes'),
+(4, 'Best Burger', 'Burger with Ham and lots of Cheese,onion and sauce', '250.00', 'Food-Name-6340.jpg', 5, 'No', 'Yes'),
+(5, 'Smoky BBQ Pizza', 'Best Firewood Pizza in Town made with thin cheese', '525.00', 'Food-Name-8298.jpg', 4, 'No', 'Yes'),
 (10, 'Chicken Biriyani', 'Richly flavored aromatic rice layered with marinated chicken ', '120.00', 'Food-Name-6512.jpg', 9, 'Yes', 'Yes'),
 (11, 'Hyderabadi Veg Biryani', 'Mixed vegetables inside layers of fluffy basmati rice', '110.00', 'Food-Name-306.jpg', 9, 'No', 'Yes'),
 (12, 'Thalaserry Beef Biryani', 'Unlike other biryani dishes thalassery biryani is unique', '170.00', 'Food-Name-7044.jpg', 9, 'No', 'Yes'),
 (13, 'Mutton Biriyani', 'Succulent pieces of mutton slow cooked on bed of aromatic rice', '300.00', 'Food-Name-114.jpg', 9, 'No', 'Yes'),
 (14, 'Bbq Chicken Pizza', 'BBQ chicken on a pizza base with loads of cheese', '135.00', 'Food-Name-9607.jpg', 4, 'Yes', 'Yes'),
 (15, 'Mediterranean Pizza', 'Pizza sauce, mozzarella, pesto and fresh mozzarella.', '325.00', 'Food-Name-1876.jpg', 4, 'No', 'Yes'),
-(16, 'Classic Paneer Pizza', 'Multigrain base, yumm paneer tikka with thin crust', '308.00', 'Food-Name-5931.jpg', 4, 'No', 'Yes');
+(16, 'Classic Paneer Pizza', 'Multigrain base, yumm paneer tikka with thin crust', '308.00', 'Food-Name-5931.jpg', 4, 'No', 'Yes'),
+(17, 'Pepper Al Faham', 'Al Faham is basically the Arabian barbecued chicken usually grilled', '230.00', 'Food-Name-4667.jpg', 11, 'Yes', 'Yes'),
+(18, 'Schezwan Chicken Fried Rice', 'Wholesome stir-fried rice topped with juicy chicken chunks ', '225.00', 'Food-Name-5970.jpg', 10, 'Yes', 'Yes'),
+(19, 'Butter Chicken', 'Perfectly cooked tendered pieces of chicken with a rich tomato and onion ', '255.00', 'Food-Name-5958.jpg', 12, 'Yes', 'Yes'),
+(20, 'Chilly Chicken', 'Chicken marinated with herbs with batter and gravy made with Chinese sauces', '235.00', 'Food-Name-2105.jpg', 10, 'Yes', 'Yes'),
+(21, ' Kanthari Al Faham', 'Kanthari alfaham chicken is one of the most spicy version of chicken Alfaham ', '245.00', 'Food-Name-7380.jpg', 11, 'No', 'Yes'),
+(22, 'Desi Spice Khichdi Box', 'Special Chef-curated Khichdi bowls that will take you on Great Indian spice tour', '229.00', 'Food-Name-1329.jpg', 12, 'No', 'Yes'),
+(23, 'Peri Peri Alfaham Mandhi', 'Spicy peri peri alfaham alongs with kuzhimandhi with salad mayonise', '240.00', 'Food-Name-9164.jpg', 11, 'No', 'Yes'),
+(24, 'Kuzhi Mandhi', 'A flavor-packed combo with mandi chicken , mandi rice and dips ', '199.00', 'Food-Name-6628.jpg', 11, 'Yes', 'Yes'),
+(25, 'Rumali Chicken Shawarma', 'Chicken shawarma wrap with romali rotti contanis chicken meat mayonise', '150.00', 'Food-Name-7422.jpg', 11, 'No', 'Yes'),
+(26, 'Chicken Tikka Masala', 'Chicken tikka masala served as a portion goes best with rice,breads.\r\n\r\n', '280.00', 'Food-Name-3204.jpg', 12, 'No', 'Yes'),
+(27, 'Kadai Paneer', 'Delicious Indian delicacy made of paneer, thick gravy of cream', '157.00', 'Food-Name-2376.jpg', 12, 'No', 'Yes'),
+(28, 'Chicken Fried Rice', 'A deliciously hearty combo of wholesome chicken fried rice.', '215.00', 'Food-Name-9721.jpg', 12, 'No', 'Yes'),
+(29, 'Chicken Noodles', 'Chicken noodles served for one person from hygeinic kitchen of 12 to 12.', '215.00', 'Food-Name-1771.jpg', 10, 'No', 'Yes'),
+(30, 'Chilli Gobi', 'A deliciously aromatic dish with deep-fried cauliflower', '122.00', 'Food-Name-6250.jpg', 10, 'No', 'Yes'),
+(31, 'McChicken Burger', 'Tender and juicy chicken patty cooked to perfection with mayonnaise', '131.00', 'Food-Name-7625.jpg', 5, 'No', 'Yes'),
+(32, 'Tandoori Zinger Burger', 'Chicken zinger with a delicious tandoori sauce', '199.00', 'Food-Name-3025.jpg', 5, 'No', 'Yes'),
+(33, 'Cheese Shawarma Burger', 'kahif special big chicken cheese made with a cheesy twist', '333.00', 'Food-Name-391.jpg', 5, 'No', 'Yes'),
+(34, 'Kizhi Porotta ', '3 porotta is mixed with beef curry and served ', '199.00', 'Food-Name-4088.jpg', 12, 'No', 'Yes');
 
 -- --------------------------------------------------------
 
@@ -126,7 +144,8 @@ INSERT INTO `tbl_order` (`id`, `food`, `price`, `qty`, `total`, `order_date`, `s
 (14, 'Best Burger', '250.00', 1, '250.00', '2022-11-12 12:56:39', 'Delivered', 6),
 (15, 'Best Burger', '250.00', 1, '250.00', '2022-11-12 02:20:43', 'Delivered', 7),
 (16, 'Smoky BBQ Pizza', '525.00', 1, '525.00', '2022-11-12 02:20:53', 'Delivered', 7),
-(17, 'Thalaserry Beef Biryani', '170.00', 1, '170.00', '2022-11-13 07:44:42', 'Ordered', 6);
+(17, 'Thalaserry Beef Biryani', '170.00', 1, '170.00', '2022-11-13 07:44:42', 'Ordered', 6),
+(18, 'Peri Peri Alfaham Mandhi', '240.00', 1, '240.00', '2022-11-13 01:54:44', 'Delivered', 6);
 
 -- --------------------------------------------------------
 
@@ -209,13 +228,13 @@ ALTER TABLE `tbl_category`
 -- AUTO_INCREMENT for table `tbl_food`
 --
 ALTER TABLE `tbl_food`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 
 --
 -- AUTO_INCREMENT for table `tbl_order`
 --
 ALTER TABLE `tbl_order`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `users`

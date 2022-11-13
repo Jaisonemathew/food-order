@@ -44,7 +44,7 @@
                 
                 ?>
 
-                <table class="content-table">
+                <table class="content-table" >
                     <tr>
                         <th>S.N.</th>
                         <th>Title</th>

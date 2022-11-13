@@ -40,7 +40,7 @@
 ?>
 
 <!-- fOOD sEARCH Section Starts Here -->
-<section class="food-search">
+<section class="food-order">
     <div class="container">        
         <h2 class="text-center text-white">Please confirm to place order</h2>
 

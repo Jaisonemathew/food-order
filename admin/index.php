@@ -14,8 +14,8 @@
                     }
                 ?>
                 <br><br>
-
-                <div class="col-4 text-center">
+                <div class="row">
+                <div class="col text-center">
 
                     <?php 
                         //Sql Query 
@@ -31,7 +31,7 @@
                     Categories
                 </div>
 
-                <div class="col-4 text-center">
+                <div class="col text-center">
 
                     <?php 
                         //Sql Query 
@@ -47,7 +47,7 @@
                     Foods
                 </div>
 
-                <div class="col-4 text-center">
+                <div class="col text-center">
                     
                     <?php 
                         //Sql Query 
@@ -63,7 +63,7 @@
                     Total Orders
                 </div>
 
-                <div class="col-4 text-center">
+                <div class="col text-center">
                     
                     <?php 
                         //Creat SQL Query to Get Total Revenue Generated
@@ -85,8 +85,10 @@
                     <br />
                     Revenue Generated
                 </div>
+                </div>
 
                 <div class="clearfix"></div>
+                <br><br><br><br>
 
             </div>
         </div>

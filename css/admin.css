@@ -131,7 +131,6 @@ table tr td{
 
 .content-table {
     border-collapse: collapse;
-    margin: 25px 0;
     font-size: 0.9em;
     min-width: 800px;
     border-radius: 5px 5px 0 0;
@@ -140,7 +139,7 @@ table tr td{
 }
 
 .content-table thead tr {
-    background-color: #2596be;
+    background-color: #45637d;
     color: #ffffff;
     text-align: left;
     font-weight: bold;
@@ -160,10 +159,10 @@ table tr td{
 }
 
 .content-table tbody tr:last-of-type {
-    border-bottom: 2px solid #2596be;
+    border-bottom: 2px solid #45637d;
 }
 
 .content-table tbody tr.active-row {
     font-weight: bold;
-    color: #2596be;
+    color: #45637d;
 }

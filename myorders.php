@@ -2,7 +2,7 @@
 
 <div class="main-content">
     <div class="wrapper">
-        <h1>Order Details</h1>
+        <h1 class="text-center">Order Details</h1>
 
                 <br /><br /><br />
                 <br><br>

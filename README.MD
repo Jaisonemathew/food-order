@@ -26,6 +26,7 @@ password: admin
 
 ## OPTIONAL
 1. Add a cart to order items
+2. User Management module in Admin Panel      
 
 
 # Screenshots

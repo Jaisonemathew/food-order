@@ -53,12 +53,14 @@
 
                 <br /><br /><br />
 
-                <table class="tbl-full">
+                <table class="content-table">
                     <tr>
                         <th>S.N.</th>
                         <th>Full Name</th>
                         <th>Username</th>
-                        <th>Actions</th>
+                        <th>Change Password</th>
+                        <th>Update Admin</th>
+                        <th>Delete Admin</th>
                     </tr>
 
                     
@@ -98,9 +100,13 @@
                                         <td><?php echo $full_name; ?></td>
                                         <td><?php echo $username; ?></td>
                                         <td>
-                                            <a href="<?php echo SITEURL; ?>admin/update-password.php?id=<?php echo $id; ?>" class="btn-primary">Change Password</a>
-                                            <a href="<?php echo SITEURL; ?>admin/update-admin.php?id=<?php echo $id; ?>" class="btn-secondary">Update Admin</a>
-                                            <a href="<?php echo SITEURL; ?>admin/delete-admin.php?id=<?php echo $id; ?>" class="btn-danger">Delete Admin</a>
+                                            <a href="<?php echo SITEURL; ?>admin/update-password.php?id=<?php echo $id; ?>" ><img src="https://img.icons8.com/fluency/48/re-enter-pincode.png"/></a>
+                                        </td>
+                                        <td>
+                                            <a href="<?php echo SITEURL; ?>admin/update-admin.php?id=<?php echo $id; ?>" ><img src="https://img.icons8.com/fluency/48/change-user-female.png"/></a>
+                                        </td>
+                                            <td>
+                                            <a href="<?php echo SITEURL; ?>admin/delete-admin.php?id=<?php echo $id; ?>" ><img src="https://img.icons8.com/fluency/48/remove-user-female.png"/></a>
                                         </td>
                                     </tr>
 

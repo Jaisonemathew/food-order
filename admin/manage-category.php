@@ -57,14 +57,15 @@
 
                 <br /><br /><br />
 
-                <table class="tbl-full">
+                <table class="content-table">
                     <tr>
                         <th>S.N.</th>
                         <th>Title</th>
                         <th>Image</th>
                         <th>Featured</th>
                         <th>Active</th>
-                        <th>Actions</th>
+                        <th>Update Category</th>
+                        <th>Delete Category</th>
                     </tr>
 
                     <?php 
@@ -125,8 +126,10 @@
                                         <td><?php echo $featured; ?></td>
                                         <td><?php echo $active; ?></td>
                                         <td>
-                                            <a href="<?php echo SITEURL; ?>admin/update-category.php?id=<?php echo $id; ?>" class="btn-secondary">Update Category</a>
-                                            <a href="<?php echo SITEURL; ?>admin/delete-category.php?id=<?php echo $id; ?>&image_name=<?php echo $image_name; ?>" class="btn-danger">Delete Category</a>
+                                            <a href="<?php echo SITEURL; ?>admin/update-category.php?id=<?php echo $id; ?>"><img src="https://img.icons8.com/color/48/approve-and-update.png"/></a>
+                                            </td>
+                                            <td>
+                                            <a href="<?php echo SITEURL; ?>admin/delete-category.php?id=<?php echo $id; ?>&image_name=<?php echo $image_name; ?>"><img src="https://img.icons8.com/fluency/48/delete-forever.png"/></a>
                                         </td>
                                     </tr>
 

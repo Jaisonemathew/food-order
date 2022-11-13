@@ -99,6 +99,7 @@ fieldset{
 }
 .menu{
     line-height: 60px;
+    font-size: 1.3rem;
 }
 .menu ul{
     list-style-type: none;

@@ -62,6 +62,21 @@
                     <br />
                     Total Orders
                 </div>
+                <div class="col text-center">
+                    
+                    <?php 
+                        //Sql Query 
+                        $sql3 = "SELECT * FROM users";
+                        //Execute Query
+                        $res3 = mysqli_query($conn, $sql3);
+                        //Count Rows
+                        $count3 = mysqli_num_rows($res3);
+                    ?>
+
+                    <h1><?php echo $count3; ?></h1>
+                    <br />
+                    Total Users
+                </div>
 
                 <div class="col text-center">
                     

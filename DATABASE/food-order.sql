@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 13, 2022 at 02:01 PM
+-- Generation Time: Nov 14, 2022 at 06:51 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.0.19
 
@@ -39,8 +39,9 @@ CREATE TABLE `tbl_admin` (
 --
 
 INSERT INTO `tbl_admin` (`id`, `full_name`, `username`, `password`) VALUES
-(10, 'Jaison', 'Jaison', 'f3ed11bbdb94fd9ebdefbaf646ab94d3'),
-(12, 'Administrator', 'admin', '21232f297a57a5a743894a0e4a801fc3');
+(12, 'Administrator', 'admin', '21232f297a57a5a743894a0e4a801fc3'),
+(13, 'Jaison E Mathew', 'jaison', '5f4dcc3b5aa765d61d8327deb882cf99'),
+(14, 'Varghese Babu', 'password', '5f4dcc3b5aa765d61d8327deb882cf99');
 
 -- --------------------------------------------------------
 
@@ -96,7 +97,6 @@ INSERT INTO `tbl_food` (`id`, `title`, `description`, `price`, `image_name`, `ca
 (11, 'Hyderabadi Veg Biryani', 'Mixed vegetables inside layers of fluffy basmati rice', '110.00', 'Food-Name-306.jpg', 9, 'No', 'Yes'),
 (12, 'Thalaserry Beef Biryani', 'Unlike other biryani dishes thalassery biryani is unique', '170.00', 'Food-Name-7044.jpg', 9, 'No', 'Yes'),
 (13, 'Mutton Biriyani', 'Succulent pieces of mutton slow cooked on bed of aromatic rice', '300.00', 'Food-Name-114.jpg', 9, 'No', 'Yes'),
-(14, 'Bbq Chicken Pizza', 'BBQ chicken on a pizza base with loads of cheese', '135.00', 'Food-Name-9607.jpg', 4, 'Yes', 'Yes'),
 (15, 'Mediterranean Pizza', 'Pizza sauce, mozzarella, pesto and fresh mozzarella.', '325.00', 'Food-Name-1876.jpg', 4, 'No', 'Yes'),
 (16, 'Classic Paneer Pizza', 'Multigrain base, yumm paneer tikka with thin crust', '308.00', 'Food-Name-5931.jpg', 4, 'No', 'Yes'),
 (17, 'Pepper Al Faham', 'Al Faham is basically the Arabian barbecued chicken usually grilled', '230.00', 'Food-Name-4667.jpg', 11, 'Yes', 'Yes'),
@@ -159,7 +159,7 @@ CREATE TABLE `users` (
   `password` varchar(255) NOT NULL,
   `customer_name` varchar(150) NOT NULL,
   `customer_email` varchar(150) NOT NULL,
-  `customer_contact` int(20) NOT NULL,
+  `customer_contact` bigint(25) NOT NULL,
   `customer_address` varchar(255) NOT NULL,
   `created_at` datetime DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -169,9 +169,10 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `password`, `customer_name`, `customer_email`, `customer_contact`, `customer_address`, `created_at`) VALUES
-(6, 'jaison_e_mathew', '$2y$10$d//Ey6eukf3xhnFlHUhrwet/xaTQEmhmjyvEF.MTT1a5NgBbMbhke', 'Jaison E Mathew', 'jaisone.bca2023@saintgits.org', 2147483647, 'Enchakattil Chengannur', '2022-11-12 17:20:06'),
-(7, 'febin_binoy', '$2y$10$3.3PY8VemjmGEiYcynAB7uoRrBeAok/Sw3rv2Zo1/.P0bNi66gNbe', 'Febin Binoy', 'febin.bca2023@saintgits.org', 2147483647, 'Febin Villa ,Chenganassery', '2022-11-12 18:48:54'),
-(8, 'varghese', '$2y$10$eF5TxEyY1AS/xuJMurhvferx76E1fRe3ABxzBZQMZtJf4p3J32RRO', 'Varghese Babu', 'varghesebabu@gmail.com', 2147483647, 'Varghese Villa ,Chengannur', '2022-11-12 19:06:00');
+(6, 'jaison_e_mathew', '$2y$10$d//Ey6eukf3xhnFlHUhrwet/xaTQEmhmjyvEF.MTT1a5NgBbMbhke', 'Jaison E Mathew', 'jaisone.bca2023@saintgits.org', 9526519828, 'Enchakattil Chengannur', '2022-11-12 17:20:06'),
+(7, 'febin_binoy', '$2y$10$3.3PY8VemjmGEiYcynAB7uoRrBeAok/Sw3rv2Zo1/.P0bNi66gNbe', 'Febin Binoy', 'febin.bca2023@saintgits.org', 9038394034, 'Febin Villa Chenganassery', '2022-11-12 18:48:54'),
+(8, 'varghese_babu', '$2y$10$eF5TxEyY1AS/xuJMurhvferx76E1fRe3ABxzBZQMZtJf4p3J32RRO', 'Varghese Babu', 'varghesebabu@gmail.com', 9284049384, 'Varghese Villa Chengannur', '2022-11-12 19:06:00'),
+(12, 'jaison_thomas', '$2y$10$emiUy3AQRP6FMXlEb3lY4urt8jwjzHM.FZK2WZShJDLUpquCqKnAW', 'Jaison Thomas', 'jaisonthomas@gmail.com', 9319392053, 'Jaison Villa ,chengannur', '2022-11-14 21:06:09');
 
 --
 -- Indexes for dumped tables
@@ -216,7 +217,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `tbl_admin`
 --
 ALTER TABLE `tbl_admin`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `tbl_category`
@@ -240,7 +241,7 @@ ALTER TABLE `tbl_order`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

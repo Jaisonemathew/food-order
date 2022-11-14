@@ -144,23 +144,23 @@
             <div class="form-group"> 
                 <label for="username">Username</label> 
             <input type="text" class="form-control" id="username"
-                name="username" aria-describedby="emailHelp">    
+                name="username" aria-describedby="emailHelp" required>    
             </div>
             <div class="form-group"> 
                 <label for="username">Full Name</label> 
             <input type="text" class="form-control" 
-                name="customer_name" aria-describedby="emailHelp">    
+                name="customer_name" aria-describedby="emailHelp" required>    
             </div>
             <div class="form-group"> 
                 <label for="password">Password</label> 
                 <input type="password" class="form-control"
-                id="password" name="password"> 
+                id="password" name="password" required> 
             </div>
         
             <div class="form-group"> 
                 <label for="cpassword">Confirm Password</label> 
                 <input type="password" class="form-control"
-                    id="cpassword" name="cpassword">
+                    id="cpassword" name="cpassword" required>
         
                 <small id="emailHelp" class="form-text text-muted">
                 Make sure to type the same password
@@ -169,20 +169,20 @@
             </div>  
             <div class="form-group"> 
                 <label for="username">Email</label> 
-            <input type="text" class="form-control" 
-                name="customer_email" aria-describedby="emailHelp">    
+            <input type="email" class="form-control" 
+                name="customer_email" aria-describedby="emailHelp" required>    
             </div>
             <div class="form-group"> 
                 <label for="username">Phone</label> 
-            <input type="text" class="form-control" 
+            <input type="number" required class="form-control" 
                 name="customer_contact" aria-describedby="emailHelp">    
             </div>
             <label for="address">Address</label> 
             <div class="form-group">
                
                 <textarea name="customer_address"
-                class="form-control">
-</textarea></div>    
+                class="form-control" required>
+         </textarea></div>    
         
             <button type="submit" class="btn btn-primary">
             SignUp

@@ -108,10 +108,10 @@
                                     <td><?php echo $featured; ?></td>
                                     <td><?php echo $active; ?></td>
                                     <td>
-                                        <a href="<?php echo SITEURL; ?>admin/update-food.php?id=<?php echo $id; ?>"><image src="https://img.icons8.com/fluency/48/approve-and-update.png"/></a>
+                                        <a href="<?php echo SITEURL; ?>admin/update-food.php?id=<?php echo $id; ?>"><image src="../images/icons/update.png"></a>
                                     </td>
                                     <td>
-                                    <a href="<?php echo SITEURL; ?>admin/delete-food.php?id=<?php echo $id; ?>&image_name=<?php echo $image_name; ?>" ><image src="https://img.icons8.com/fluency/48/delete-forever.png"/></a>    
+                                    <a href="<?php echo SITEURL; ?>admin/delete-food.php?id=<?php echo $id; ?>&image_name=<?php echo $image_name; ?>" ><image src="../images/icons/delete.png"/></a>    
                                     </td>
                                 </tr>
 

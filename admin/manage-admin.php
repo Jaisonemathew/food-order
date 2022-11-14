@@ -100,13 +100,13 @@
                                         <td><?php echo $full_name; ?></td>
                                         <td><?php echo $username; ?></td>
                                         <td>
-                                            <a href="<?php echo SITEURL; ?>admin/update-password.php?id=<?php echo $id; ?>" ><img src="https://img.icons8.com/fluency/48/re-enter-pincode.png"/></a>
+                                            <a href="<?php echo SITEURL; ?>admin/update-password.php?id=<?php echo $id; ?>" ><img src="../images/icons/update-password.png"/></a>
                                         </td>
                                         <td>
-                                            <a href="<?php echo SITEURL; ?>admin/update-admin.php?id=<?php echo $id; ?>" ><img src="https://img.icons8.com/fluency/48/change-user-female.png"/></a>
+                                            <a href="<?php echo SITEURL; ?>admin/update-admin.php?id=<?php echo $id; ?>" ><img src="../images/icons/update-user.png"/></a>
                                         </td>
                                             <td>
-                                            <a href="<?php echo SITEURL; ?>admin/delete-admin.php?id=<?php echo $id; ?>" ><img src="https://img.icons8.com/fluency/48/remove-user-female.png"/></a>
+                                            <a href="<?php echo SITEURL; ?>admin/delete-admin.php?id=<?php echo $id; ?>" ><img src="../images/icons/delete-user.png"/></a>
                                         </td>
                                     </tr>
 

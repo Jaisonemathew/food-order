@@ -110,10 +110,10 @@
                                         <td><?php echo $address; ?></td>
                                         <td><?php echo $created; ?></td>
                                         <td>
-                                            <a href="<?php echo SITEURL; ?>admin/update-users.php?id=<?php echo $id; ?>" ><img src="https://img.icons8.com/fluency/48/change-user-female.png"/></a>
+                                            <a href="<?php echo SITEURL; ?>admin/update-users.php?id=<?php echo $id; ?>" ><img src="../images/icons/update-user.png"/></a>
                                         </td>
                                             <td>
-                                            <a href="<?php echo SITEURL; ?>admin/delete-users.php?id=<?php echo $id; ?>" ><img src="https://img.icons8.com/fluency/48/remove-user-female.png"/></a>
+                                            <a href="<?php echo SITEURL; ?>admin/delete-users.php?id=<?php echo $id; ?>" ><img src="../images/icons/delete-user.png"/></a>
                                             
                                         </td>
                                     </tr>

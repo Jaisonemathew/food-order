@@ -126,10 +126,10 @@
                                         <td><?php echo $featured; ?></td>
                                         <td><?php echo $active; ?></td>
                                         <td>
-                                            <a href="<?php echo SITEURL; ?>admin/update-category.php?id=<?php echo $id; ?>"><img src="https://img.icons8.com/color/48/approve-and-update.png"/></a>
+                                            <a href="<?php echo SITEURL; ?>admin/update-category.php?id=<?php echo $id; ?>"><img src="../images/icons/update.png"/></a>
                                             </td>
                                             <td>
-                                            <a href="<?php echo SITEURL; ?>admin/delete-category.php?id=<?php echo $id; ?>&image_name=<?php echo $image_name; ?>"><img src="https://img.icons8.com/fluency/48/delete-forever.png"/></a>
+                                            <a href="<?php echo SITEURL; ?>admin/delete-category.php?id=<?php echo $id; ?>&image_name=<?php echo $image_name; ?>"><img src="../images/icons/delete.png"/></a>
                                         </td>
                                     </tr>
 

@@ -96,7 +96,7 @@
                                         <td><?php echo $customer_email; ?></td>
                                         <td><?php echo $customer_address; ?></td>
                                         <td>
-                                            <a href="<?php echo SITEURL; ?>admin/update-order.php?id=<?php echo $id; ?>"><img src="https://img.icons8.com/fluency/48/approve-and-update.png"/></a>
+                                            <a href="<?php echo SITEURL; ?>admin/update-order.php?id=<?php echo $id; ?>"><img src="../images/icons/update.png"/></a>
                                         </td>
                                     </tr>
 

@@ -139,6 +139,7 @@
     <div class="container my-4 ">
         
         <h2 class="text-center">Signup Here</h2> 
+        <h5>*All fields are required</h5>
         <form action="" method="post">
         
             <div class="form-group"> 
@@ -176,6 +177,10 @@
                 <label for="username">Phone</label> 
             <input type="number" required class="form-control" 
                 name="customer_contact" aria-describedby="emailHelp">    
+                
+                <small id="emailHelp" class="form-text text-muted">
+                Please Enter a valid 10 digit mobile number
+                </small> 
             </div>
             <label for="address">Address</label> 
             <div class="form-group">

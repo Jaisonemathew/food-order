@@ -10,7 +10,7 @@ Open your favorite browser; we recommend using Google Chrome or Mozilla Firefox.
 
 Then, go to the URL “http://localhost/phpmyadmin“
 
-Create a Database with the name onlinefoodphp
+Create a Database with the name food-order
 
 Click on the “Import” tab and choose the database file (food-order.sql) which is provided under the folder naming “DATABASE FILE”.
 

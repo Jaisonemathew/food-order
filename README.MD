@@ -1,3 +1,17 @@
+# Screenshots
+
+## Website 
+![Screenshot](/screenshots/1.png?raw=true "Screenshot")
+![Screenshot](/screenshots/2.png?raw=true "Screenshot")
+![Screenshot](/screenshots/3.png?raw=true "Screenshot")
+
+
+## Admin Panel
+![Screenshot](/screenshots/4.png?raw=true "Screenshot")
+![Screenshot](/screenshots/5.png?raw=true "Screenshot")
+![Screenshot](/screenshots/6.png?raw=true "Screenshot")
+
+
 # How to run?
 
 First install XAMPP server and open the installed directory 
@@ -26,22 +40,6 @@ password: admin
 
 ## OPTIONAL
 1. Add a cart to order items 
-
-
-# Screenshots
-
-## Website 
-![Screenshot](/screenshots/1.png?raw=true "Screenshot")
-![Screenshot](/screenshots/2.png?raw=true "Screenshot")
-![Screenshot](/screenshots/3.png?raw=true "Screenshot")
-
-
-## Admin Panel
-![Screenshot](/screenshots/4.png?raw=true "Screenshot")
-![Screenshot](/screenshots/5.png?raw=true "Screenshot")
-![Screenshot](/screenshots/6.png?raw=true "Screenshot")
-
-
 
 # Recommanded tools to run
 1. [XAMPP](https://www.apachefriends.org/download.html)
